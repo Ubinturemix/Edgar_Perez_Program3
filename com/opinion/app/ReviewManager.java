@@ -26,7 +26,8 @@ import java.util.stream.Collectors;
  */
 public final class ReviewManager {
 
-    private final DataStore ds = DataStoreMemory.getInstance();
+    private final DataStore ds = DataStores.defaultStore();
+
     private final Scanner in = new Scanner(System.in);
     private User currentUser = null;
 
